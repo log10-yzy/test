@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/tv_pic"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_weight="1"
+        android:text="草莓"
+        android:gravity="center_vertical"
+        android:textSize="30sp"
+        android:layout_width="0dp"
+        android:textColor="@color/black"
+        android:layout_height="match_parent"/>
+</LinearLayout>

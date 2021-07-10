@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0033"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/frag2txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这是一个fragment组件"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/frag2button"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="frag2"/>
+
+</FrameLayout>
