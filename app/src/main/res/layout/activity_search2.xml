@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:cacheColorHint="#fff"
+        android:divider="@color/black"
+        android:background="#09F7C7"
+        android:fadeScrollbars="true"
+        android:dividerHeight="2dp"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:cacheColorHint="#fff"
+        android:divider="@color/black"
+        android:background="#F70968"
+        android:fadeScrollbars="true"
+        android:dividerHeight="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="@string/hello_world"
+
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="密码"
+        android:inputType="numberPassword"
+        android:padding="10dp"
+        android:maxLength="13"
+        android:text="1111111111111"
+        android:maxLines="1"
+        android:cursorVisible="false"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:textStyle="italic"
+        android:maxLength="10"
+        android:textColor="#000000"
+        android:text="@string/hello_world"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/test"
+        android:text="@string/hello_world"
+        android:onClick="方法名"
+        />
+
+
+
+
+</LinearLayout>

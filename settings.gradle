@@ -1,0 +1,11 @@
+include ':contentprovider'
+include ':broadcast'
+include ':viewpager2'
+include ':lifecycle'
+include ':thread'
+include ':fruitapplication'
+include ':application2'
+include ':application1'
+include ':app2'
+include ':app'
+rootProject.name = "My Application"
