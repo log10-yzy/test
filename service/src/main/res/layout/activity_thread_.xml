@@ -3,19 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+
+    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Thread_Activity">
 
     <Button
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="call phone"
-        android:id="@+id/call"
-        />
-    <Button
+        android:text="respond"
+        android:id="@+id/change"/>
+    <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="32sp"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:text="通讯录获取"
-        android:id="@+id/get_content"/>
+        android:text="how are you?"/>
 
 </LinearLayout>

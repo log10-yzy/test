@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         // startMessage(number = 12345678,msg="hello")
              startSecondActivity()
             //   searchActivity()
+
         }
         Log.d("test","onCreate")
     }

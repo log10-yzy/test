@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         button=findViewById(R.id.app1);
         button2=(Button) findViewById(R.id.app2);
         button3=findViewById(R.id.app3);
-        Log.v("MainActivity_test","OnCreate"+hashCode()+"taskID"+getTaskId());//standard
+        Log.v(MainActivity.class.getSimpleName(),"OnCreate"+hashCode()+"taskID"+getTaskId());//standard
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
         finish();
         finishAffinity();
     }
-
 
     @Override
     protected void onDestroy() {
