@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.myapplication">
+    package="com.example.appservice">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission
@@ -15,17 +15,17 @@
         android:roundIcon="@mipmap/u"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".MainActivity3"></activity>
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".SearchActivity2" />
-        <activity android:name=".TextActivity">
+        <activity android:name="com.example.appservice.MainActivity3"></activity>
+        <activity android:name="com.example.appservice.MainActivity2" />
+        <activity android:name="com.example.appservice.SearchActivity2" />
+        <activity android:name="com.example.appservice.TextActivity">
             <intent-filter>
                 <action android:name="android.intent.action.PROCESS_TEXT" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.appservice.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

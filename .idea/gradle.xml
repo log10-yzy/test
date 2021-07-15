@@ -15,11 +15,14 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/app2" />
             <option value="$PROJECT_DIR$/application1" />
+            <option value="$PROJECT_DIR$/appservice" />
             <option value="$PROJECT_DIR$/broadcast" />
             <option value="$PROJECT_DIR$/contentprovider" />
             <option value="$PROJECT_DIR$/fruitapplication" />
+            <option value="$PROJECT_DIR$/imitationalipay" />
             <option value="$PROJECT_DIR$/lifecycle" />
             <option value="$PROJECT_DIR$/myapplication" />
+            <option value="$PROJECT_DIR$/mymodule" />
             <option value="$PROJECT_DIR$/service" />
             <option value="$PROJECT_DIR$/viewpager2" />
           </set>

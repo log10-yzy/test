@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:background="@mipmap/u"
+        android:contentDescription="TODO" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="账户："
+            android:textSize="15sp"
+            android:maxLength="8"
+            android:maxLines="1"
+            android:gravity="center"
+            android:layout_marginStart="20dp"
+            android:textColor="#000000"/>
+
+        <com.example.imitationalipay.ClearEditText
+            android:id="@+id/user"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:background="@color/white"
+            android:hint="请输入用户名"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/view1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="@string/String_Password"
+            android:layout_marginStart="20dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="#000000"/>
+        <com.example.imitationalipay.ClearEditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"
+            android:hint="@string/String_putPassword"
+            android:background="@color/white"
+            android:inputType="numberPassword"
+            android:maxLength="15"
+            android:maxLines="1" />
+
+
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/login"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:background="#4782DB"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="登录"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckedTextView
+            android:id="@+id/rem_password1"
+            android:checked="false"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/login_color"
+            android:text="忘记密码?"
+            android:textSize="15sp"/>
+        <CheckedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="230dp"
+            android:textColor="@color/login_color"
+            android:text="换个方式登录"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="370dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckedTextView
+            android:id="@+id/login"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="135dp"
+            android:textColor="@color/login_color"
+            android:text="注册账号"
+            android:textSize="15sp"
+            tools:ignore="DuplicateIds" />
+        <CheckedTextView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/login_color"
+            android:text="遇到问题？"/>
+
+    </LinearLayout>
+
+</LinearLayout>

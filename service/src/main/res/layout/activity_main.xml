@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context="com.example.service.MainActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -33,13 +33,13 @@
             android:id="@+id/txt2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="这是服务启动区"
+            android:text="这是服务暂停区"
             />
         <Button
             android:id="@+id/Server_stop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="start服务"/>
+            android:text="stop服务"/>
 
     </LinearLayout>
     <LinearLayout

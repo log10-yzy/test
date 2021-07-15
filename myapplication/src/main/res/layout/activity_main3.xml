@@ -27,7 +27,7 @@
             android:layout_height="50dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="20dp"
-            android:text="app1" />
+            android:text="退出" />
 
         <Button
             android:id="@+id/app32"

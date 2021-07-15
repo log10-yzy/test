@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Thread</string>
+    <string name="content">Service</string>
 </resources>
