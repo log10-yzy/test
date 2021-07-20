@@ -24,7 +24,7 @@ public class RecyclerActivity extends AppCompatActivity {
         fruits = new ArrayList<>();
         initData();
         MyFruitAdapter myFruitAdapter = new MyFruitAdapter(fruits, RecyclerActivity.this);
-        recyclerView.setAdapter(myFruitAdapter);
+//        recyclerView.setAdapter(myFruitAdapter);
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(RecyclerActivity.this);
         linearLayoutManager.setOrientation(OrientationHelper.HORIZONTAL);

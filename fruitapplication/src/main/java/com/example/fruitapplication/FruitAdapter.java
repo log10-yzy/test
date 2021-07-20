@@ -14,34 +14,20 @@ import androidx.annotation.Nullable;
 import java.util.List;
 
 public class FruitAdapter extends ArrayAdapter<Fruit> {
-    private Context context;
-    private List<Fruit> fruits;
-
+    private int resourceId;
     public FruitAdapter(@NonNull Context context, int resource, @NonNull List<Fruit> objects) {
         super(context, resource, objects);
-        this.context=context;
-        this.fruits=objects;
+        resourceId=resource;
     }
-    @NonNull
-    @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        ViewHolder viewHolder;
-        if(convertView==null){
-            convertView=LayoutInflater.from(context).inflate(R.layout.fruit_item2, parent, false);
-            viewHolder = new ViewHolder();
-            viewHolder.textView=convertView.findViewById(R.id.tv_name);
-            viewHolder.imageView=convertView.findViewById(R.id.tv_pic);
-            convertView.setTag(viewHolder);
-        }else {
-            viewHolder=(ViewHolder)convertView.getTag();
-        }
 
-        viewHolder.textView.setText(fruits.get(position).getName());
-        viewHolder.imageView.setImageResource(fruits.get(position).getRes());
-        return convertView;
+    public View getView(int position,View contentView,ViewGroup parent){
+        Fruit fruit=getItem(position);
+        View view=LayoutInflater.from(getContext()).inflate(resourceId,parent,false);
+        ImageView fruitImg=view.findViewById(R.id.tv_pic);
+        TextView fruitName=view.findViewById(R.id.tv_name);
+        fruitImg.setImageResource(fruit.getImgId());
+        fruit.setName(fruit.getName());
+        return view;
     }
-    class ViewHolder{
-        private TextView textView;
-        private ImageView imageView;
-    }
+
 }

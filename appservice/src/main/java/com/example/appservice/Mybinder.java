@@ -4,6 +4,7 @@ import android.os.RemoteException;
 import android.util.Log;
 
 public class Mybinder extends MyService.Stub{
+
     @Override
     public String getName() throws RemoteException {
 

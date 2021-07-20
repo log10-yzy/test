@@ -2,10 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/bankgrand"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Activity1_test">
 
+<!--    <include layout="@layout/title"/>-->
+    <com.example.appservice.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+
+        android:max="100"
+        android:id="@+id/img"/>
     <TextView
         android:id="@+id/Main1text"
         android:layout_width="wrap_content"
@@ -14,6 +27,13 @@
         android:layout_gravity="center"
         android:textSize="32sp"
         android:text="this is app3"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_text"
+        android:hint="输入数据："
+        android:textColor="@color/black"
+        android:textSize="32sp"/>
 
     <LinearLayout
         android:layout_width="300dp"
@@ -21,13 +41,14 @@
         android:layout_gravity="center"
         android:orientation="vertical">
 
+
         <Button
             android:id="@+id/app31"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="20dp"
-            android:text="退出" />
+            android:text="百度" />
 
         <Button
             android:id="@+id/app32"

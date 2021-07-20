@@ -1,4 +1,4 @@
-package com.example.imitationalipay;
+package bean;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -12,6 +12,9 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import androidx.core.content.ContextCompat;
+
+import com.example.imitationalipay.R;
+
 public class ClearEditText extends androidx.appcompat.widget.AppCompatEditText {
 
     private Context context;
@@ -43,18 +46,16 @@ public class ClearEditText extends androidx.appcompat.widget.AppCompatEditText {
 
     }
     private void init() {
-        imgA=ContextCompat.getDrawable(context,R.drawable.delete);
+        imgA=ContextCompat.getDrawable(context, R.drawable.delete);
         addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
             }
-
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
             }
-
             @Override
             public void afterTextChanged(Editable s) {
                 setDrawable();
@@ -74,7 +75,7 @@ public class ClearEditText extends androidx.appcompat.widget.AppCompatEditText {
         if(imgA!=null&& event.getAction()==MotionEvent.ACTION_UP){
             int eventX=(int) event.getRawX();
             int eventY=(int) event.getRawY();
-            Log.v(Tag,"eventX"+eventX+";eventY"+eventY);
+//            Log.v(Tag,"eventX"+eventX+";eventY"+eventY);
             Rect rect=new Rect();
             getGlobalVisibleRect(rect);
             rect.left=rect.right-50;

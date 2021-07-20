@@ -1,16 +1,12 @@
 package com.example.fruitapplication;
 
 public class Fruit {
-    String name;
-    private int res;
+    private String name;
+    private int imgId;
 
-    public Fruit(String name, int res) {
+    public Fruit(String name, int imgId) {
         this.name = name;
-        this.res = res;
-    }
-
-    public Fruit(String name) {
-        this.name = name;
+        this.imgId = imgId;
     }
 
     public String getName() {
@@ -21,19 +17,11 @@ public class Fruit {
         this.name = name;
     }
 
-    public int getRes() {
-        return res;
+    public int getImgId() {
+        return imgId;
     }
 
-    public void setRes(int res) {
-        this.res = res;
-    }
-
-    @Override
-    public String toString() {
-        return "Fruit{" +
-                "name='" + name + '\'' +
-                ", res=" + res +
-                '}';
+    public void setImgId(int imgId) {
+        this.imgId = imgId;
     }
 }
